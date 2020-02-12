@@ -1,0 +1,13 @@
+<table>
+    <td><a [routerLink]="'add-items'" routerLinkActive="router-link-active" (click)="toggleDisplay()" >BuyItem</a></td>
+    <td><a [routerLink]="'view-item'" routerLinkActive="router-link-active" (click)="toggleDisplay()" >ViewCart</a></td>
+
+</table>
+<div>
+    <h1 [hidden]=isShow>Welcome {{uname}}</h1>
+<button (click)="logout()">Logout</button>
+</div>
+<div>
+    <router-outlet></router-outlet>
+    
+</div>

@@ -1,0 +1,16 @@
+
+<div>
+<h1 [hidden]=isShow>Welcome {{uname}}</h1>
+</div>
+
+<table>
+    <td><a [routerLink]="'buyer-item'" routerLinkActive="router-link-active" (click)="toggleDisplay()" >BuyItem</a></td>
+    <td><a [routerLink]="'view-cart'" routerLinkActive="router-link-active" (click)="toggleDisplay()" >ViewCart</a></td>
+    <td><a [routerLink]="'payment'" routerLinkActive="router-link-active" (click)="toggleDisplay()" >Payment</a></td>
+</table>
+<div>
+    <router-outlet></router-outlet>
+    
+</div>
+<button (click)="logout()">Logout</button>
+

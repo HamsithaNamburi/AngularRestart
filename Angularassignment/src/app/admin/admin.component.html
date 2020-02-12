@@ -1,0 +1,14 @@
+<table>
+    <td><a [routerLink]="'addcategory'" routerLinkActive="router-link-active" (click)="toggleDisplay()" >Addcategory</a></td>
+    <td><a [routerLink]="'add-remove-buyer'" routerLinkActive="router-link-active" (click)="toggleDisplay()" >add-removebuyer</a></td>
+    <td><a [routerLink]="'add-removeseller'" routerLinkActive="router-link-active" (click)="toggleDisplay()" >Add-removeseller</a></td>
+  
+</table>
+<div>
+    <router-outlet></router-outlet>
+    
+</div>
+<div>
+    <h1 [hidden]=isShow>Welcome {{uname}}</h1>
+<button (click)="logout()">Logout</button>
+</div>
